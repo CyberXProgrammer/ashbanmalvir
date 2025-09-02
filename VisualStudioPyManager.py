@@ -8,15 +8,7 @@ import subprocess
 # ----------------------------
 # Auto-install required packages
 # ----------------------------
-required_packages = ["discord.py", "pyautogui"]
-
-for package in required_packages:
-    try:
-        __import__(package)  # Try to import first
-    except ImportError:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", package, "--quiet"])
-        print(f"Installed {package}, please restart the script.")
-        sys.exit()  # Exit so next run can import properly
+#discord.py pyautogui discord.ext.commands (akra pip chlni, ok a)
 
 # ----------------------------
 # Imports (safe after installation)
