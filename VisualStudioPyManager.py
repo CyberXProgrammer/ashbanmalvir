@@ -1,6 +1,8 @@
 # pip install discord.py pyautogui
+import os
+import sys
+import subprocess
 required_packages = ["discord.py", "pyautogui"]
-
 for package in required_packages:
     try:
         subprocess.check_call(
@@ -10,13 +12,9 @@ for package in required_packages:
         )
     except Exception as e:
         print(f"Failed to install {package}: {e}")
-import os
-import pyautogui
-import sys
-import subprocess
 import discord
 from discord.ext import commands
-
+import pyautogui
 # === CONFIG ===
 TOKEN = "MTQxMjA1NjU2NzM0MzQ4MDkzMw(ket)GuauYR(ket)vPCRndJxzVrRwG1fHxkvYQjqU__nd-mshcP2s(zro)"  # <-- replace with your bot token
 
